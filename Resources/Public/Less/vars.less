@@ -1,0 +1,75 @@
+@import "grid.less";
+
+// Variables
+@red: #e72b31;
+@blue: #5da7dc;
+
+@backgroundColor: #42678b;
+@contentBackgroundColor: #F3F0F0;
+@groupsBackgroundColor: rgba(230, 226, 207, 0.8); // Gennemsigtig brun
+//@groupsBackgroundColor: #DCDCE0; // Blågrå
+//@groupsBackgroundColor: rgba(170, 180, 200, .2);// Gennemsigtig blågrå
+@globalNavTextColor: #888;
+
+
+// Fonts
+@font-face{
+	font-family:'GlobalMenu';
+	font-style: normal;
+	font-weight: normal;
+	//src:url('menuglobal.eot'); // <- for IE
+	src:local('MetaNormal-Roman'), url('../Fonts/menuglobal.ttf') format('opentype');
+}
+@font-face{
+	font-family:'Heading';
+	font-style: normal;
+	font-weight: bold;
+	//src:url('menu1.eot'); // <- for IE
+	src:local('MetaBold-Roman'), url('../Fonts/menu1.ttf') format('opentype');
+}
+
+
+// Functions
+
+.rgba-background(@hex, @alpha) {
+	background-color: @hex;
+	background-color: @hex + rgba(0, 0, 0, @alpha);
+}
+
+.linear-gradient(@start, @stop) {
+	background-image: -webkit-linear-gradient(@start, @stop);
+}
+
+.box-shadow(@x: 0, @y: 1px, @blur: 2px, @color: rgba(0, 0, 0, .5)) {
+	box-shadow: @arguments;
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+}
+.box-shadow-inset(@x: 0, @y: 1px, @blur: 2px, @color: rgba(0, 0, 0, .5)) {
+	box-shadow: @arguments inset;
+	-moz-box-shadow: @arguments inset;
+	-webkit-box-shadow: @arguments inset;
+}
+.no-box-shadow() {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.border-radius(@r: 5px) {
+	border-radius: @r;
+}
+
+.column-count(@count) {
+	-webkit-column-count: @count;
+}
+
+.transition(@property: all, @time: .5s, @transition: ease-in-out) {
+	-webkit-transition: @arguments;
+}
+
+.default-border(@r: 5px) {
+	border: 3px solid #fafafa;
+	.border-radius(@r);
+	.box-shadow();
+}

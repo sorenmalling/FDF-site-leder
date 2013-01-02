@@ -1,0 +1,6 @@
+page {
+	includeCSS {
+		10_common = EXT:fdf_leder/Resources/Public/StyleSheets/common.css
+		20_screen = EXT:fdf_leder/Resources/Public/StyleSheets/screen.css
+	}
+}
