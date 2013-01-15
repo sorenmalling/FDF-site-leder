@@ -7,16 +7,20 @@
 	<div id="pagewrapper">
 		<article id="content">
 			<header id="local-navigation-first-level">
-				<h1><a href="/">Leder</a></h1>
+				<h1>
+					<a href="/">
+						<f:cObject typoscriptObjectPath="lib.shared.sitetitle" />
+					</a>
+				</h1>
 				<nav>
-					<f:cObject typoscriptObjectPath="lib.menu.main" />
+					<f:cObject typoscriptObjectPath="lib.navigation.main" />
 				</nav>
 			</header>
 			<section id="main-content">
-				<!--<f:render section="Content" arguments="{_all}" />-->
-				<div class="row">
-					{contentNormal -> f:format.raw()}
-				</div>
+					<div class="span4">
+						{contentNormal -> f:format.raw()}
+					</div>
+				<div class="row"></div>
 			</section>
 			<article id="groups">
 				<div class="row">
@@ -49,6 +53,7 @@
 				</div>
 			</article>
 			<aside id="databases">
+				{contentLeft -> f:format.raw()}
 				<h2>Genveje</h2>
 				<div class="row">
 					<div class="span1 display-bounds"></div>
