@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array (
-	'title' => 'Base FDF Site Extension',
-	'description' => 'Extension holding needed base stuff for the FDF Portal',
+	'title' => 'FDF Leder Site',
+	'description' => 'Extension holding needed stuff for the FDF Leder site',
 	'category' => 'misc',
 	'shy' => 0,
 	'version' => '0.0.1',
