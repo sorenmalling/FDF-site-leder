@@ -4,3 +4,7 @@ page {
 		20_screen = EXT:fdf_leder/Resources/Public/StyleSheets/screen.css
 	}
 }
+
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fdf_leder/Resources/Private/TypoScript/Content/Bottom/Shortcuts.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fdf_leder/Resources/Private/TypoScript/Content/Bottom/Games.ts">
