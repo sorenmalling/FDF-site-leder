@@ -1,3 +1,5 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fdf_base/Configuration/TypoScript/Base/setup.txt">
+
 page {
 	includeCSS {
 		10_common = EXT:fdf_leder/Resources/Public/StyleSheets/common.css
